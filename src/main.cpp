@@ -1,11 +1,12 @@
 #include <stdio.h>
 #include "main.h"
 
-#ifndef TEST
+#ifndef
 int main() {
     printf("Rule Breaker!!!\n");
     printf("5 + 2 = %d\n", addNumber(5, 2));
     printf("%d\n", getTriangleType(3, 4, 5));
+    printf("6 - 3 = %d\n", Number(6, 3));
     return 0;
 }
 #endif // TEST
@@ -35,4 +36,11 @@ int getTriangleType(int a, int b, int c) {
         return -1;
     }
     return -3;
+
+    }
+
+int Number(int a, int b)
+{
+    return a - b;
 }
+
